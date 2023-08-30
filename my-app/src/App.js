@@ -1,10 +1,13 @@
 import './App.css'
+/* import Greeting from './components/pure/greeting' */
+import GreetingF from './components/pure/greetingF'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hola Mundito!</h1>
+        {/* <Greeting name="Ricardo" /> */}
+        <GreetingF name="Ricardo" />
       </header>
     </div>
   )
