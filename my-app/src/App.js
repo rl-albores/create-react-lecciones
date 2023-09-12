@@ -1,10 +1,11 @@
 import './App.css'
-import Father from './components/container/father'
+/* import OptionalRender from './components/pure/optionalRender' */
+/* import Father from './components/container/father' */
 /* import GreetingStyled from './components/pure/greetingStyled' */
 /* import Ejemplo1 from './hooks/Ejemplo1' */
 /* import Ejemplo2 from './hooks/Ejemplo2' */
 /* import Ejemplo4 from './hooks/Ejemplo4' */
-/* import TaskListComponent from './components/container/task_list' */
+import TaskListComponent from './components/container/task_list'
 /* import Greeting from './components/pure/greeting' */
 /* import GreetingF from './components/pure/greetingF' */
 
@@ -23,8 +24,11 @@ function App() {
         <GreetingStyled name="Ricardo" />
       </header> */}
       {/** Gestion de eventos */}
-      {/* <TaskListComponent /> */}
-      <Father />
+      <TaskListComponent />
+      {/* <Father /> */}
+      {/* Ejemplos de Renderizados condicionales */}
+      {/* <OptionalRender /> */}
+      {/* PROYECTO FINAL */}
     </div>
   )
 }

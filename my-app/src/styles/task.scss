@@ -1,7 +1,22 @@
 h1 {
   color: aquamarine;
 }
+
 .task-name {
   font-weight: bold;
   color: cadetblue;
+}
+
+.task-action {
+  cursor: pointer;
+}
+
+.task-completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.task-pending {
+  color: orangered;
+  font-weight: bold;
 }

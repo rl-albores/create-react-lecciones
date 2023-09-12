@@ -6,13 +6,13 @@ import React, { useState } from 'react'
 
 const loggedStyle = {
   color: 'white',
-  fontWeight: 'bold',
 }
 
 // ? estilo para usuario no logueado
 
 const unloggedStyle = {
   color: 'tomato',
+  fontWeight: 'bold',
 }
 
 const GreetingStyled = (props) => {
