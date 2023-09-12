@@ -31,7 +31,9 @@ const TaskListComponent = () => {
   //control del ciclo de vida del componente
   useEffect(() => {
     console.log('Task State has been modified')
-    setLoading(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
     return () => {
       console.log('TaskList component is going to unmount...')
     }
@@ -104,6 +106,12 @@ const TaskListComponent = () => {
     )
   }
 
+  const loadingStyle = {
+    color: 'orange',
+    fontSize: '12px',
+    fontWeight: 'bold',
+  }
+
   return (
     <div className="col-12 ">
       <div className="card">
@@ -114,10 +122,11 @@ const TaskListComponent = () => {
           className="card-body"
           style={{ position: 'relative', height: '400px' }}
           data-mdb-perfect-scroolbar="true">
-          {tasksTable}
+          {/*ToDo: add loading spinner */}
+          {loading ? <p style={loadingStyle}>Loading tasks</p> : tasksTable}
         </div>
       </div>
-      <TaskForm add={addTask} />
+      <TaskForm add={addTask} lenght={tasks.length} />
       {/* TODO APLICAR UN For/Map para renderizar una lista */}
       {/* <TaskComponent task={defaultTask} /> */}
     </div>
