@@ -6,7 +6,8 @@ import './App.css'
 /* import Ejemplo2 from './hooks/Ejemplo2' */
 /* import Ejemplo4 from './hooks/Ejemplo4' */
 /* import TaskListComponent from './components/container/task_list' */
-import LoginFormik from './components/pure/forms/loginFormik'
+/* import LoginFormik from './components/pure/forms/loginFormik' */
+import RegisterFormik from './components/pure/forms/registerFormik'
 /* import Greeting from './components/pure/greeting' */
 /* import GreetingF from './components/pure/greetingF' */
 
@@ -30,7 +31,8 @@ function App() {
       {/* Ejemplos de Renderizados condicionales */}
       {/* <OptionalRender /> */}
       {/* Ejemplos de Formik */}
-      <LoginFormik />
+      {/* <LoginFormik /> */}
+      <RegisterFormik />
       {/* PROYECTO FINAL */}
     </div>
   )
