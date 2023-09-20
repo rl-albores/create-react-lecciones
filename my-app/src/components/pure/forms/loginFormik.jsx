@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 
@@ -15,6 +16,8 @@ const LoginFormik = () => {
     password: '',
   }
 
+  const history = useNavigate()
+
   return (
     <div>
       <h4>Login Formik</h4>
@@ -24,7 +27,8 @@ const LoginFormik = () => {
         onSubmit={async (values) => {
           await new Promise((r) => setTimeout(r, 500))
           alert(JSON.stringify(values, null, 2))
-          localStorage.setItem('credentials', values) //-> quedan los datos en el localstorage
+          await localStorage.setItem('credentials', values) //-> quedan los datos en el localstorage
+          history('/profile')
         }}>
         {/* We obtain props form Formik */}
 
