@@ -8,13 +8,14 @@ import {
 } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/home/HomePage'
+import StatePage from './pages/home/StatePage'
+
 import NotFoundPage from './pages/404/NotFoundPage'
 import AboutPage from './pages/about-faqs/AboutPage'
 import ProfilePage from './pages/profile/ProfilePage'
 import TasksPage from './pages/tasks/TasksPage'
 import TaskDetailPage from './pages/tasks/TaskDetailPage'
 import LoginPage from './pages/auth/LoginPage'
-import StatePage from './pages/home/StatePage'
 
 function AppRoutingOne() {
   let logged = false
@@ -32,6 +33,7 @@ function AppRoutingOne() {
   ]
   useEffect(() => {
     logged = localStorage.getItem('credentials')
+    console.log('User logged?', logged)
   }, [])
 
   return (
@@ -48,8 +50,8 @@ function AppRoutingOne() {
         </aside>
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/online-state" element={<StatePage />} />
+            <Route exact path="/" element={<HomePage />} />
+            <Route exact path="/online-state" element={<StatePage />} />
             <Route
               path="/login"
               element={logged ? <Navigate to="/" replace /> : <LoginPage />}

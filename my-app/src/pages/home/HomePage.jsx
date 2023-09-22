@@ -1,15 +1,22 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const HomePage = () => {
   const navigate = useNavigate()
+  const location = useLocation()
+
+  useEffect(() => {
+    console.log(location.search)
+  })
+
+  console.log('We are in route: ', location.pathname)
 
   const navigateTo = (path) => {
     navigate(path)
   }
 
   const navigateProps = (path) => {
-    navigate({
+    navigate(path, {
       pathname: path,
       search: '?online=true',
       state: { online: true },
