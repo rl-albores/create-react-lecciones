@@ -1,4 +1,6 @@
 import './App.css'
+/* import AsyncExample from './components/pure/AsyncExample' */
+import ObservableExample from './components/pure/ObservableExample'
 /* import OptionalRender from './components/pure/optionalRender' */
 /* import Father from './components/container/father' */
 /* import GreetingStyled from './components/pure/greetingStyled' */
@@ -7,7 +9,7 @@ import './App.css'
 /* import Ejemplo4 from './hooks/Ejemplo4' */
 /* import TaskListComponent from './components/container/task_list' */
 /* import LoginFormik from './components/pure/forms/loginFormik' */
-import RegisterFormik from './components/pure/forms/registerFormik'
+/* import RegisterFormik from './components/pure/forms/registerFormik' */
 /* import Greeting from './components/pure/greeting' */
 /* import GreetingF from './components/pure/greetingF' */
 
@@ -32,8 +34,10 @@ function App() {
       {/* <OptionalRender /> */}
       {/* Ejemplos de Formik */}
       {/* <LoginFormik /> */}
-      <RegisterFormik />
+      {/* <RegisterFormik /> */}
       {/* PROYECTO FINAL */}
+      {/* <AsyncExample /> */}
+      <ObservableExample />
     </div>
   )
 }
