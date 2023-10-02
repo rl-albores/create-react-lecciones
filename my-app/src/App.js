@@ -1,6 +1,7 @@
 import './App.css'
+import FetchExample from './components/pure/FetchExample'
 /* import AsyncExample from './components/pure/AsyncExample' */
-import ObservableExample from './components/pure/ObservableExample'
+/* import ObservableExample from './components/pure/ObservableExample' */
 /* import OptionalRender from './components/pure/optionalRender' */
 /* import Father from './components/container/father' */
 /* import GreetingStyled from './components/pure/greetingStyled' */
@@ -37,7 +38,8 @@ function App() {
       {/* <RegisterFormik /> */}
       {/* PROYECTO FINAL */}
       {/* <AsyncExample /> */}
-      <ObservableExample />
+      {/* <ObservableExample /> */}
+      <FetchExample />
     </div>
   )
 }

@@ -5,6 +5,8 @@ const ObservableExample = () => {
   const [number, setNumber] = useState(0)
 
   const obtainNumbers = () => {
+    console.log('Subscripcion a Observable')
+
     getNumbers.subscribe({
       next(newNumber) {
         console.log('New number: ', newNumber)
