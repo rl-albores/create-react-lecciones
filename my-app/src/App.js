@@ -1,5 +1,6 @@
 import './App.css'
-import FetchExample from './components/pure/FetchExample'
+import AxiosExample from './components/pure/AxiosExample'
+/* import FetchExample from './components/pure/FetchExample' */
 /* import AsyncExample from './components/pure/AsyncExample' */
 /* import ObservableExample from './components/pure/ObservableExample' */
 /* import OptionalRender from './components/pure/optionalRender' */
@@ -39,7 +40,8 @@ function App() {
       {/* PROYECTO FINAL */}
       {/* <AsyncExample /> */}
       {/* <ObservableExample /> */}
-      <FetchExample />
+      {/* <FetchExample /> */}
+      <AxiosExample />
     </div>
   )
 }
